@@ -4,6 +4,7 @@ import MaterialsSection from "@/components/materials/MaterialsSection";
 import WhyChooseUsSection from "@/components/sections/WhyChooseUsSection";
 import PortfolioSection from "@/components/portfolio/PortfolioSection";
 import TestimonialsSection from "@/components/testimonials/TestimonialsSection";
+import CTASection from "@/components/contact/CTASection";
 
 export default function HomePage() {
   return (
@@ -14,6 +15,7 @@ export default function HomePage() {
       <WhyChooseUsSection />
       <PortfolioSection />
       <TestimonialsSection />
+      <CTASection />
     </>
   );
 }
