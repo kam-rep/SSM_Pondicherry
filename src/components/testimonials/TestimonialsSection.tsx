@@ -8,19 +8,18 @@ export default function TestimonialsSection() {
   return (
     <section className="py-20 sm:py-24">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-[var(--color-accent)]">
-            Client Experiences
+            Client Feedback
           </p>
 
           <h2 className="mt-3 font-serif text-3xl font-semibold tracking-tight text-[var(--color-text)] sm:text-4xl lg:text-5xl">
-            Trusted by Our Clients
+            What Our Clients Say
           </h2>
 
           <p className="mt-5 text-base leading-7 text-[var(--color-text-muted)] sm:text-lg">
-            Quality workmanship, thoughtful design and attention to detail
-            are at the heart of every project we undertake.
+            We believe quality workmanship, thoughtful design and customer
+            satisfaction are the foundation of every project.
           </p>
         </div>
 
@@ -28,36 +27,37 @@ export default function TestimonialsSection() {
           {featuredTestimonials.map((testimonial) => (
             <article
               key={testimonial.id}
-              className="rounded-[var(--radius-large)] border border-[var(--color-border)] bg-white p-6 shadow-[var(--shadow-small)] transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-medium)]"
+              className="rounded-[var(--radius-large)] border border-[var(--color-border)] bg-white p-6 shadow-[var(--shadow-small)] transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-medium)] sm:p-7"
             >
-              <div
-                className="flex gap-1 text-[var(--color-accent)]"
-                aria-label={`${testimonial.rating} out of 5 stars`}
-              >
+              <div className="flex items-center gap-1" aria-label={`${testimonial.rating} out of 5 stars`}>
                 {Array.from({ length: testimonial.rating }).map((_, index) => (
-                  <span key={index}>★</span>
+                  <span
+                    key={index}
+                    className="text-lg text-[var(--color-accent)]"
+                  >
+                    ★
+                  </span>
                 ))}
               </div>
 
-              <p className="mt-5 text-sm leading-7 text-[var(--color-text-muted)]">
-                "{testimonial.quote}"
-              </p>
+              <blockquote className="mt-5 text-base leading-7 text-[var(--color-text-muted)]">
+                “{testimonial.quote}”
+              </blockquote>
 
               <div className="mt-6 border-t border-[var(--color-border)] pt-5">
-                <h3 className="font-semibold text-[var(--color-text)]">
+                <p className="font-semibold text-[var(--color-text)]">
                   {testimonial.name}
-                </h3>
+                </p>
 
-                <div className="mt-1 flex items-center gap-2 text-sm text-[var(--color-text-muted)]">
-                  <span>{testimonial.location}</span>
-                  <span>•</span>
+                <div className="mt-1 flex flex-wrap gap-2 text-sm text-[var(--color-text-muted)]">
                   <span>{testimonial.projectType}</span>
+                  <span>•</span>
+                  <span>{testimonial.location}</span>
                 </div>
               </div>
             </article>
           ))}
         </div>
-
       </div>
     </section>
   );
