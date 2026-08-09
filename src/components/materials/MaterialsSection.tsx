@@ -6,8 +6,9 @@ import { materials } from "@/data/materials";
 
 export default function MaterialsSection() {
   return (
-    <section className="bg-white px-5 py-20 sm:px-8 lg:px-12 lg:py-28">
-      <div className="mx-auto max-w-7xl">
+    <section className="py-20 sm:py-24">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+
         {/* Section Header */}
         <div className="max-w-3xl">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-[var(--color-accent)] sm:text-sm">
@@ -27,7 +28,7 @@ export default function MaterialsSection() {
 
         {/* Materials Grid */}
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:mt-16 lg:grid-cols-4">
-          {materials.map((material) => (
+          {materials.map((material, index) => (
             <article
               key={material.id}
               className="group overflow-hidden rounded-[20px] border border-[var(--color-border)] bg-[var(--color-secondary)] transition duration-300 hover:-translate-y-1 hover:shadow-[var(--shadow-medium)]"
@@ -38,6 +39,8 @@ export default function MaterialsSection() {
                   src={material.image}
                   alt={material.name}
                   fill
+                  priority={index === 0}
+                  loading={index === 0 ? "eager" : "lazy"}
                   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
                   className="object-cover transition duration-500 group-hover:scale-105"
                 />
@@ -69,6 +72,7 @@ export default function MaterialsSection() {
                           size={15}
                           className="mt-0.5 shrink-0 text-[var(--color-accent)]"
                         />
+
                         <span>{item}</span>
                       </li>
                     ))}
@@ -99,6 +103,7 @@ export default function MaterialsSection() {
             </article>
           ))}
         </div>
+
       </div>
     </section>
   );
