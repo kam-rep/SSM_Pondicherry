@@ -5,6 +5,7 @@ import { seo } from "@/config/seo";
 
 import Navbar from "@/components/navigation/Navbar";
 import Footer from "@/components/footer/Footer";
+import WhatsAppButton from "@/components/whatsapp/WhatsAppButton";
 
 import "../globals.css";
 
@@ -48,8 +49,13 @@ export default function WebsiteLayout({
     <html lang={seo.locale === "en_IN" ? "en-IN" : "en"}>
       <body>
         <Navbar />
+
         {children}
+
         <Footer />
+
+        {/* Floating WhatsApp Button */}
+        <WhatsAppButton />
       </body>
     </html>
   );
