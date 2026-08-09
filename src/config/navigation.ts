@@ -1,36 +1,41 @@
 export const navigation = [
-  {
-    label: "Home",
-    href: "/",
-  },
+{
+label: "Home",
+href: "/",
+},
 
-  {
-    label: "About",
-    href: "/about",
-  },
+{
+label: "About",
+href: "/about",
+},
 
-  {
-    label: "Services",
-    href: "/services",
-  },
+{
+label: "Services",
+href: "/services",
+},
 
-  {
-    label: "Portfolio",
-    href: "/portfolio",
-  },
+{
+label: "Portfolio",
+href: "/portfolio",
+},
 
-  {
-    label: "Materials",
-    href: "/materials",
-  },
+{
+label: "Materials",
+href: "/materials",
+},
 
-  {
-    label: "Gallery",
-    href: "/gallery",
-  },
+{
+label: "Gallery",
+href: "/gallery",
+},
 
-  {
-    label: "Contact",
-    href: "/contact",
-  },
+{
+label: "FAQ",
+href: "/faq",
+},
+
+{
+label: "Contact",
+href: "/contact",
+},
 ] as const;
