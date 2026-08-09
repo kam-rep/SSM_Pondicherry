@@ -1,5 +1,5 @@
 export const business = {
-  name: "SSM BUILDERS",
+  name: "SRI SAKTHI MURUGAN BUILDERS AND ENTERPRISES",
 
   tagline:
     "Designing Elegant Spaces with Premium Wood, PVC, uPVC & WPC Solutions",

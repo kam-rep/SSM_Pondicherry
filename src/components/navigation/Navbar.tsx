@@ -18,14 +18,20 @@ export default function Navbar() {
         <Link
           href="/"
           onClick={() => setIsOpen(false)}
-          className="flex items-center"
+          className="flex min-w-0 items-center"
         >
-          <div>
-            <p className="font-serif text-xl font-bold tracking-tight text-[var(--color-primary)] sm:text-2xl">
-              {business.name}
-            </p>
+          <div className="w-[300px] max-w-[300px]">
+            <div className="font-serif text-[18px] font-semibold leading-[1.05] tracking-tight text-[var(--color-primary)] sm:text-[20px]">
+              <span className="block">
+                {business.name.split(" BUILDERS")[0]}
+              </span>
 
-            <p className="hidden text-[10px] font-medium uppercase tracking-[0.15em] text-[var(--color-text-muted)] sm:block">
+              <span className="block">
+                BUILDERS &amp; ENTERPRISES
+              </span>
+            </div>
+
+            <p className="mt-1 text-[9px] font-medium uppercase tracking-[0.18em] text-[var(--color-text-muted)]">
               Wood • PVC • uPVC • WPC
             </p>
           </div>
