@@ -8,6 +8,7 @@ export const seo = {
     "SSM BUILDERS provides premium wood, PVC, uPVC and WPC solutions for residential, commercial, retail, office and industrial projects across Puducherry and Tamil Nadu.",
 
   keywords: [
+    "SRI SAKTHI MURUGAN BUILDERS AND ENTERPRISES",
     "SSM BUILDERS",
     "wooden doors",
     "wooden windows",
@@ -23,6 +24,7 @@ export const seo = {
     "office interiors",
     "Pondicherry",
     "Puducherry",
+    "Kotakuppam",
     "Tamil Nadu",
   ],
 

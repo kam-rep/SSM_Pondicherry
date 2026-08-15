@@ -70,6 +70,7 @@ export const projects = [
     images: [
       "/images/portfolio/project-002-01.webp",
       "/images/portfolio/project-002-02.webp",
+      "/images/portfolio/project-002-03.webp",
     ],
   },
 
@@ -145,6 +146,7 @@ export const projects = [
     images: [
       "/images/portfolio/project-004-01.webp",
       "/images/portfolio/project-004-02.webp",
+      "/images/portfolio/project-004-03.webp",
     ],
   },
 
@@ -222,6 +224,7 @@ export const projects = [
     images: [
       "/images/portfolio/project-006-01.webp",
       "/images/portfolio/project-006-02.webp",
+      "/images/portfolio/project-006-03.webp",
     ],
   },
 ] as const;

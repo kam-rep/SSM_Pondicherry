@@ -3,7 +3,7 @@ export const contact = {
 
   whatsapp: "918056477842",
 
-  email: "info@example.com",
+  email: "ssmbuildersenterprises@gmail.com",
 
   address: {
     line1: "Your Business Address",
