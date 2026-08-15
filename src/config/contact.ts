@@ -6,11 +6,11 @@ export const contact = {
   email: "ssmbuildersenterprises@gmail.com",
 
   address: {
-    line1: "Your Business Address",
-    city: "Puducherry",
+    line1: "No.3 ECR main-road,jamid nagar,kottakuppam,",
+    city: "Villupuram",
     state: "Tamil Nadu",
     country: "India",
-    pincode: "000000",
+    pincode: "605014",
   },
 
   workingHours: {
