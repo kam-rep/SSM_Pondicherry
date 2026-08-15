@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
 import { Menu, X, Phone, MessageCircle } from "lucide-react";
@@ -18,22 +19,27 @@ export default function Navbar() {
         <Link
           href="/"
           onClick={() => setIsOpen(false)}
-          className="flex min-w-0 items-center"
+          className="flex items-center gap-2"
         >
-          <div className="w-[300px] max-w-[300px]">
-            <div className="font-serif text-[18px] font-semibold leading-[1.05] tracking-tight text-[var(--color-primary)] sm:text-[20px]">
+          <Image
+            src="/images/logos/ssm-logo.png"
+            alt={business.name}
+            width={260}
+            height={80}
+            priority
+            className="h-auto w-[80px] object-contain sm:w-[85px]"
+          />
+
+          <div className="w-[180px] max-w-[180px] sm:w-[220px] sm:max-w-[220px]">
+            <div className="font-serif text-[16px] font-semibold leading-[1.05] tracking-tight text-[var(--color-primary)] sm:text-[18px]">
               <span className="block">
-                {business.name.split(" BUILDERS")[0]}
+                {business.name.split(" BUILDERS")[0]} BUILDERS
               </span>
 
               <span className="block">
-                BUILDERS &amp; ENTERPRISES
+                {business.name.split(" BUILDERS")[1]}
               </span>
             </div>
-
-            <p className="mt-1 text-[9px] font-medium uppercase tracking-[0.18em] text-[var(--color-text-muted)]">
-              Wood • PVC • uPVC • WPC
-            </p>
           </div>
         </Link>
 
